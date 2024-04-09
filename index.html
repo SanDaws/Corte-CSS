@@ -32,37 +32,38 @@ fecha: 9-abril
         <h1><b>&lt;</b> <b>T</b>rans<b>R</b>iwi <b>&gt;</b></h1>
         <nav>
             <a href=""><i class="bi bi-card-checklist"></i> Requisitos</a>
-            <a href="">Acerca De Nosotros</a>
-            <a href=""><i class="bi bi-envelope-fill"></i> Contactanos</a>
-            <a href=""><i class="bi bi-telephone-fill"></i> Llamanos</a>
-            <a href=""><button>Iniciar Sesion</button></a>
+            <a href="#about">Acerca De Nosotros</a>
+            <a href="mailto:formacion@riwi.io"><i class="bi bi-envelope-fill"></i> Contactanos</a>
+            <a href="tel:+573017325327"><i class="bi bi-telephone-fill"></i> Llamanos</a>
+            <a href="#ini-secion"><button>Iniciar Sesion</button></a>
             <a href="#registro"><button>Registrarte</button></a>
+            
         </nav>
     </header>
 
 
     <main>
 <!-- icono flotante -->
-        <section>
-            <a href=""><img src="./public/icons/whatsapp.webp" alt=""></i></a>
+        <section class="whatsapp">
+            <a href="https://wa.me/3017325327"><img src="./public/icons/whatsapp.webp" alt=""></i></a>
         </section>
 <!-- solicitud de vehiculo -->
-        <section>
-            <div>
+        <section id="ini-secion" class="sect solicitud" >
+            <article>
                 <h2>Transportate desde cualquier lugar hacia tu centro de entrenamiento</h2>
             <form name="viaje" action="" method="post">
                 <input type="text" placeholder="Ingresa tu ubicacion" required>
                 <input type="search" name="" id="" required>
-                <input type="submit" value="Solicitar vehiculo">
+                <button type="submit"> <i class="bi bi-send-fill"></i> Solicitar vehiculo</button>
             </form>
-            </div>
+            </article>
             <figure>
                 <img src="./public/images/cuatro_pasajeros.webp" alt="Cuatro pasajeros">
             </figure>
         </section>
 
 <!-- promocion sobre registro y ganancias -->
-        <section>
+        <section class="sect promocion" >
 
             <figure>
                 <img src="./public/images/conductora.webp" alt="conductora">
@@ -75,13 +76,47 @@ fecha: 9-abril
         </section>
 
 <!-- disponibilidad de vehiculos -->
-        <section>
+        <section class="sect disp-vehiculos" >
             <article>
                 <h2>viaja con amigos</h2>
                 <p>¡Viaja con amigos y crea recuerdos inolvidables!
                     observa la lista de vehiculos disponibles en cada una de nuestras sedes
                 </p>
-                <!-- segunda pasada para hacer la tabla -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="bi bi-buildings-fill"></i> Sede</th>
+                            <th><i class="bi bi-car-front-fill"></i> Vehiculos</th>
+                            <th><i class="bi bi-bicycle"></i> motos</th>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Riwi Medellin</th>
+                            <th>15</th>
+                            <th>40</th>
+                        </tr>
+                        <tr>
+                            <th>Riwi Bucaramanga</th>
+                            <th>10</th>
+                            <th>30</th>
+                        </tr>
+                        <tr>
+                            <th>Riwi Barranquilla</th>
+                            <th>20</th>
+                            <th>180</th>
+                        </tr>
+                        <tr>
+                            <th>Riwi Cali</th>
+                            <th>8</th>
+                            <th>200</th>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
             </article>
             <figure>
                 <img src="./public/images/motociclistas.webp" alt="">
@@ -90,49 +125,55 @@ fecha: 9-abril
 <!-- requisitos para conduccion -->
         <section>
             <h2>¿que necesito para ser un conductor riwi?</h2>
-            <figure>
-                <img src="./public/images/conductores.webp" alt="">
-            </figure>
-            <section>
 
-                <!-- requisitos -->
-                <article>
-                    <i class="bi bi-star-fill"></i>
-                    <h3>Requisitos</h3>
-                    <ul>
-                        <li>Ser mayor de 18 años</li>
-                        <li>Verificación de antecedentes</li>
-                        <li>ser coder de riwi</li>
-                    </ul>
-                </article>
-
-                <!-- documentos -->
-                <article>
-                    <i class="bi bi-file-earmark-text-fill"></i>
-                    <h3>Documentos</h3>
-                    <ul>
-                        <li>Licencia de conducción vigente</li>
-                        <li>SOAT vigente</li>
-                        <li>Tarjeta de propiedad del vehiculo actual</li>
-                    </ul>
-                </article>
-
-                <!-- pasos  registro -->
-                <article>
-                    <i class="bi bi-calendar-fill"></i>
-                    <h3>Empezar es muy fácil</h3>
-                    <ul>
-                        <li>Registrate</li>
-                        <li>Sube tus documentos</li>
-                        <li>Sal a manejar</li>
-                    </ul>
-                </article>
+            <section class="sect requisitos" >
+            
+                <figure>
+                    <img src="./public/images/conductores.webp" alt="">
+                </figure>
+                <section class="list-requsitos">
+    
+                    <!-- requisitos -->
+                    <article>
+                        <i class="bi bi-star-fill"></i>
+                        <h3>Requisitos</h3>
+                        <ul>
+                            <li>Ser mayor de 18 años</li>
+                            <li>Verificación de antecedentes</li>
+                            <li>ser coder de riwi</li>
+                        </ul>
+                    </article>
+    
+                    <!-- documentos -->
+                    <article>
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                        <h3>Documentos</h3>
+                        <ul>
+                            <li>Licencia de conducción vigente</li>
+                            <li>SOAT vigente</li>
+                            <li>Tarjeta de propiedad del vehiculo actual</li>
+                        </ul>
+                    </article>
+    
+                    <!-- pasos  registro -->
+                    <article>
+                        <i class="bi bi-calendar-fill"></i>
+                        <h3>Empezar es muy fácil</h3>
+                        <ul>
+                            <li>Registrate</li>
+                            <li>Sube tus documentos</li>
+                            <li>Sal a manejar</li>
+                        </ul>
+                    </article>
+                </section>
             </section>
         </section>
+        
 
 <!-- formulario de registro -->
-        <section id="registro">
+        <section  class="sect registro" id="registro">
             <form action="">
+                <legend>Registrate cuando quieras</legend>
                 <input type="text" placeholder="Ingresa tu nombre" required>
                 <input type="email" name="" id="" placeholder="Ingresa tu correo" required>
                 <input type="tel" name="" id="" placeholder="ingresa tu telefono" required>
@@ -143,26 +184,33 @@ fecha: 9-abril
                 <!-- comentarios -->
                 <input type="text">
                 <!-- . -->
-                <input type="submit" value="Registrate">
+                <button type="submit">Registrate</button>
             </form>
         </section>
+
 <!-- acerca de Nosotros -->
-        <section>
-
+        <section id="about">
             <h2>Acerca de Nosotros</h2>
+            <section class="sect about" >
 
-            <!-- video -->
-            <article>
-                <h3>¿Quienes somos?</h3>
+            
+
                 <!-- video -->
-            </article>
-
-            <!-- mapa     -->
-            <article>
-                <h3>¿donde estamos ubicados?</h3>
-                <!-- mapa -->
-            </article>
+                <article>
+                    <h3>¿Quienes somos?</h3>
+                    <!-- video -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=KEzpmkWWMnFrL3wx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
+    
+                <!-- mapa     -->
+                <article>
+                    <h3>¿donde estamos ubicados?</h3>
+                    <!-- mapa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.342920045787!2d-75.5833746!3d6.2193831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e1dab04e05%3A0x5a77c25c8a5faf3a!2sDe%20Moda%20Outlet!5e0!3m2!1ses-419!2sco!4v1712676139031!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </section>
         </section>
+        
 
     </main>
 
@@ -173,7 +221,7 @@ fecha: 9-abril
             <a href=""><i class="bi bi-linkedin"></i></a>
             <a href=""><i class="bi bi-twitter-x"></i></a>
         </section>
-        <p>&copy; 2024 <a href="">Riwi.io</a> todos los derechos reservados</p>
+        <p>&copy; 2024 <a href="https://riwi.io/">Riwi.io</a> todos los derechos reservados</p>
 
     </footer>
 
