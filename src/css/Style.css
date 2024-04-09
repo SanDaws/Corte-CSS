@@ -145,7 +145,12 @@ select{
 }
 /*requisitos para conductor*/
 .sect.requisitos{
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.sect.requisitos figure{
+    width: 60%;
 }
 .sect.requisitos .list-requsitos{
     display: flex;
@@ -161,7 +166,7 @@ select{
 .sect.requisitos .list-requsitos li{
     list-style: none;
 }
-/*talbas*/
+/*tablas*/
 table{
     width: 100%;
     text-align: start;
