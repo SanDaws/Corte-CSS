@@ -46,6 +46,7 @@ img{
 h1{
     /* color de h1 */
     color: var(--azul-ozcuro);
+    font-size: 3rem;
 }
 h1 b{
     /* cambio de opciones de b para el color deseado */
@@ -78,10 +79,11 @@ a{
 }
 /* todos los botones tienen el mismo color */
 button{
+    
+    height: 2rem;
     background-color: var(--azul-claro);
     border: 0;
-    border-radius:  0 25px 25% 22%;
-    
+    border-radius:  20px;
     color: var(--blanco);
 }
 /*link flotante a whatsapp*/
@@ -116,12 +118,14 @@ button{
 }
 .sect form legend{
     text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
 }
 /*formularios*/
 form button{
     width: 50%;
     height: 10%;
-    text-align: center;
+    justify-content: center;
 
 }
 input{
@@ -129,6 +133,15 @@ input{
     border: 1px solid var(--azul-claro);
     border-radius: 5px;
 
+}
+form textarea{
+    border: 1px solid var(--azul-claro);
+}
+select{
+    height: 2rem;
+    border: 1px solid var(--azul-claro);
+    background-color: var(--blanco);
+    border-radius: 5px;
 }
 /*requisitos para conductor*/
 .sect.requisitos{
@@ -147,6 +160,17 @@ input{
 }
 .sect.requisitos .list-requsitos li{
     list-style: none;
+}
+/*talbas*/
+table{
+    width: 100%;
+    text-align: start;
+}
+tr{
+    word-spacing: 10%;
+}
+tr th{
+    padding-right: 20%;
 }
 
 
